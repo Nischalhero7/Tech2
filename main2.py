@@ -25,7 +25,7 @@ testing_labels = testing_labels[:4000]
 
 model = models.load_model('image_classifier.keras')
 
-img = cv.imread('car.jpg')
+img = cv.imread('cars.jpg')
 img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 img = cv.resize(img, (32, 32))
 
